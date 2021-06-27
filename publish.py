@@ -9,12 +9,12 @@ PRE_HEADER = """
 
 HEADER = """
 
-<link rel="stylesheet" type="text/css" href="/css/common-vendor.b8ecfc406ac0b5f77a26.css">
-<link rel="stylesheet" type="text/css" href="/css/font-vendor.b86e2bf451b246b1a88e.css">
-<link rel="stylesheet" type="text/css" href="/css/fretboard.f32f2a8d5293869f0195.css">
-<link rel="stylesheet" type="text/css" href="/css/pretty.0ae3265014f89d9850bf.css">
-<link rel="stylesheet" type="text/css" href="/css/pretty-vendor.83ac49e057c3eac4fce3.css">
-<link rel="stylesheet" type="text/css" href="/css/misc.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/common-vendor.b8ecfc406ac0b5f77a26.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/font-vendor.b86e2bf451b246b1a88e.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/fretboard.f32f2a8d5293869f0195.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty.0ae3265014f89d9850bf.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty-vendor.83ac49e057c3eac4fce3.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/misc.css') }}">
 
 <script type="text/javascript" id="MathJax-script" async
   src="/scripts/mathjax.js">
@@ -262,14 +262,14 @@ if __name__ == '__main__':
         # Generate the html file
         options = metadata.get('pandoc', '')
         
-        os.system('pandoc -o /tmp/temp_output.html {} {}'.format(file_location, options))
+        os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
         total_file_contents = (
             PRE_HEADER +
             RSS_LINK.format(metadata['title']) +
             HEADER +
             make_twitter_card(metadata['title'], global_config) +
             TITLE_TEMPLATE.format(metadata['title'], get_printed_date(metadata)) +
-            defancify(open('/tmp/temp_output.html').read()) +
+            defancify(open('tmp/temp_output.html').read()) +
             FOOTER
         )
 
@@ -277,10 +277,10 @@ if __name__ == '__main__':
         
         # Make sure target directory exists
         truncated_path = os.path.split(path)[0]
-        os.system('mkdir -p {}'.format(os.path.join('site', truncated_path)))
+        os.system('mkdir -p {}'.format(os.path.join('templates', truncated_path)))
         
         # Put it in the desired location
-        out_location = os.path.join('site', path)
+        out_location = os.path.join('templates', path)
         open(out_location, 'w').write(total_file_contents)
 
     # Reset ToC
@@ -297,7 +297,7 @@ if __name__ == '__main__':
     toc_items = [make_toc_item(global_config, metadata) for metadata in sorted_metadatas]
     feed = generate_feed(global_config, sorted_metadatas)
 
-    os.system('mkdir -p {}'.format(os.path.join('site', 'categories')))
+    os.system('mkdir -p {}'.format(os.path.join('templates', 'categories')))
 
     print("Building tables of contents...")
 
@@ -309,7 +309,7 @@ if __name__ == '__main__':
             category in sorted_metadatas[i]['categories']
         ]
         toc = make_toc(category_toc_items, global_config, categories, category)
-        open(os.path.join('site', 'categories', category+'.html'), 'w').write(toc)
+        open(os.path.join('templates', 'categories', category+'.html'), 'w').write(toc)
         if category == global_config.get('homepage_category', ''):
             homepage_toc_items = category_toc_items
 
