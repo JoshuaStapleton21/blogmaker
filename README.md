@@ -4,7 +4,7 @@ This is an ultra-simple self-hosted blog publishing solution.
 
 ### Dependencies
 
-* pandoc
+* pandoc (USE BREW TO INSTALL PANDOC)
 * rsync
 
 ### How to use
@@ -19,14 +19,7 @@ If you need a post to use MathJaX to format LaTeX equations, add the line
 
 to the config at the top of the post.
 
-To compile a post to html, run `./publish.py posts/hoi.md` (or `./publish.py posts/*` to recompile everything). Use `./publish.py --sync posts` to upload the latest version of your site to your server (make sure to put your server details, as well as the site title and icon, in [config.md](./config.md)).
-
-Other options include:
-
-* `./publish.py --sync images` to sync the images directory
-* `./publish.py --sync all` to sync everything (including scripts and styles). **Make sure to run this the first time you publish**
-
-For the server, the simplest setup is to use any VPS, `apt install apache2`, make sure apache2 is running, and just set the directory to /var/www/html.
+After writing the post in markdown, go to publish_article.py, and simpy change the name at the top of the file to whatever you decided to name the post (minus the '.md'. Run the file and you're good to go!).
 
 ### Misc
 
