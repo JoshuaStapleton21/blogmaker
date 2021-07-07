@@ -14,5 +14,9 @@ def education():
 def meaning_of_life():
     return render_template('templates/2021/07/06/meaning_of_life.html')
 
+@app.route('/zksnarks.html')
+def zksnarks():
+    return render_template('templates/2021/07/07/zksnarks.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

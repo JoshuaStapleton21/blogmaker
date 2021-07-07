@@ -11,6 +11,15 @@
   </image>
 
 <item>
+<title>ZK-snarks: A 30,000 Foot View</title>
+<link>skee/templates/2021/07/07/zksnarks.html</link>
+<guid>skee/templates/2021/07/07/zksnarks.html</guid>
+<pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
+<description></description>
+</item>
+
+
+<item>
 <title>The Seven Meanings of Life</title>
 <link>skee/templates/2021/07/06/meaning_of_life.html</link>
 <guid>skee/templates/2021/07/06/meaning_of_life.html</guid>
@@ -20,37 +29,10 @@
 
 
 <item>
-<title>The Most Important Person</title>
-<link>skee/templates/2020/10/24/most_important_person.html</link>
-<guid>skee/templates/2020/10/24/most_important_person.html</guid>
-<pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-<description></description>
-</item>
-
-
-<item>
-<title>The history of hoi</title>
-<link>skee/templates/2020/10/24/hoi.html</link>
-<guid>skee/templates/2020/10/24/hoi.html</guid>
-<pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-<description></description>
-</item>
-
-
-<item>
-<title>Hello world</title>
-<link>skee/templates/2020/10/24/hello.html</link>
-<guid>skee/templates/2020/10/24/hello.html</guid>
-<pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-<description></description>
-</item>
-
-
-<item>
-<title>Hello Josh</title>
-<link>skee/templates/2020/10/24/hoi2.html</link>
-<guid>skee/templates/2020/10/24/hoi2.html</guid>
-<pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+<title>Musings on Education</title>
+<link>skee/templates/2021/07/06/education.html</link>
+<guid>skee/templates/2021/07/06/education.html</guid>
+<pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
 <description></description>
 </item>
 

@@ -1,7 +1,7 @@
 import os
 
 ########### THIS IS THE ONLY PARAMETER WHICH NEEDS TO BE CONFIGURED IN THE WHOLE FILE ##########
-article_name = "meaning_of_life"
+article_name = "zksnarks"
 ################################################################################################
 
 
