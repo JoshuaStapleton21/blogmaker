@@ -2,7 +2,7 @@
 [date]: <> (2021/07/07)
 [title]: <> (zk-SNARKs: A 30,000 Foot View)
 
-# Introduction
+### Introduction
 zk-SNARKs, or **Z**ero-**K**nowledge **S**uccict **N**on-interactive **AR**guments of **K**nowledge are a complicated, yet powerful form of mathematical proof. In practice, they are used as a form of trustless communication: prove to me that you know something without revealing the details of what you know. 
 
 There are a number of words in the acronym, and so let's take a quick look at them each individually.
@@ -12,7 +12,7 @@ There are a number of words in the acronym, and so let's take a quick look at th
 - Non-interactive: There is no need for back-and forth communication. The proof consists of a single message sent from prover to verifier. 
 - Argument of Knowledge: a set of statements (preferably in formal language) used to convince someone of something, or provide support to a claim.
   
-# Example
+### Example
 The classic example can be explained using the Where's Wally franchise. ('Where's WaLdO' in some dubious circles.)
 
 <p align="center">
@@ -39,7 +39,7 @@ Metaphorically, this is how it is done. Set up a floor to ceiling wall between t
 
 This, at an extremely generalized, metaphorical level, is a zero-knowledge proof: or more specifically, a zk-SNARK. Applications abound, and while I am still figuring out the differences between the different species of the zk family, the core idea remains incredibly powerful. 
 
-# Real-World Examples
+### Real-World Examples
 Originally, zk-SNARKs were used for very niche proofs in computer science, however, they have since been expanded to encompass abstract arguments, and have in fact been shown to summarize ANY form of argument. For example, using ZK-snarks, we are able to prove that we have a checking account balance larger than $100,000 without revealing the balance itself. We would be able to prove that we have a disability, and qualify for grants, without revealing anything about the nature of that disability. It is important for you, reader, to understand the zk-SNARKs reveal absolutely nothing about the statement in question. Only that is is valid or not. These implementation of the use-cases mentioned are still relatively far out, as they deal with the incredibly sensitive details of human society. Much work will need to be done before ZK-snarks could fully remove the cost of trust.
 
 However, this does not mean that fascinating near-term applications of zk-SNARKs do not abound. zk-SNARKS can also be used, excitingly as proofs of computation. Vitalik Buterin (our king) gave a simple [example](https://vitalik.ca/general/2021/01/26/snarks.html) of a hash function in his article on the topic. For you noobs who don't know what a hash function is, don't worry; no one really knows the details of state of the art hash functions, else they would cease to be true hash functions. For the sake of space, a hash function is simply a mechanism which scrambles a piece of data beyond recognition, such that there is no way (in theory) to figure out how to find the original data from the scrambled version of it.
@@ -57,7 +57,7 @@ $$We, the prover, claim to have a solution to it in the form $x_1$ (if you reall
 
 At first glance, extending this simple math example to hash-functions or other, more abstract proofs such as the proof of disability mentioned earlier might seem tricky, or nigh-impossible. Fear not, however, for ZK-snarks save the day.
 
-## How ZKSnarks work (generally)
+### How ZKSnarks work (generally)
 Spoiler Alert: I am in no way going to go into the specifics of how ZK-snarks function under the hood. The full details of the math is quite literally beyond me at this stage. What I will provide, however, is a 30,000 foot view of their functionality: what they do, not how they do it.
 
 Abstracting naively from the sparse amount of reading and research I have done on the subject, ZK-snarks aim to encode problems as polynomials and provide a proof in the form of a solution (or root) of that polynomial. That is, given a large, complicated encoding of a problem $y = f(x)$ (or to be more mathematically precise: $y_1, y_2, y_3... = f(x_1, x_2, x_3 ...)$), we provide a proof that we have solved that problem in the form of a solution $(x_1, x_2, x_3 ...)$. 
@@ -66,7 +66,7 @@ Why does this work? Essentially, we are able to verify solutions to polynomial e
 
 Continuing with our wonderful Wally example, we might be able to encode the gnarly map containing Wally in a crowd as some function. The solution to this function would be two numbers y1, and y2 representing the coordinates of Wally. If we provided a vector (or matrix) X containing the values which, when plugged into the function, would yield the correct coordinates of Wally, we would have proven to the verifier that we know how to find Wally, at least for this example. It is key to note that we did not reveal our method(s) of searching for Wally. The verifier has no idea if we sent a search team for him, if we determined his position algorithmically, whether we implanted a tracker in his arm, NOTHING. In theory, there is no way for the verifier to replicate our methods and copy them. They simply know that we know something, without knowing the details of *how* we know it; The verifier knows that we are telling the truth without knowing the details of that truth.
 
-# I think this is a fallacy
+### I think this is a fallacy
 In practice, this large function might be computed through machine learning, in the form of a neural network. Given enough data points in the form (wally_map, coordinates_of_wally), we could train a neural network to encode the relationship between the two. This way, the verifier would quickly be able check whether or not somebody is able to find Wally consistently.
 
 To further cement the example, let us conduct a high-level thought experiment to figure out how a ZK-snark might be used to prove the disability of a prover without giving away the nature of this disability. The verifier could first train a neural network on data in the form (patient_information, disabilty_present). The patient information could be an arbitrarily large vector of data points on the patient, from age, to height, to blood type, etc.
