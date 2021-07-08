@@ -10,7 +10,8 @@ There are a number of words in the acronym, and so let's take a quick look at th
 - Zero-Knowledge: this basically means that one party (the prover) can prove to another (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.
 - Succinct: essentially "efficient" - the proof is concise, and does not grow with the complexity of the thing to be proven.
 - Non-interactive: There is no need for back-and forth communication. The proof consists of a single message sent from prover to verifier. 
-
+- Argument of Knowledge: a set of statements (preferably in formal language) used to convince someone of something, or provide support to a claim.
+  
 # Example
 The classic example can be explained using the Where's Wally franchise. ('Where's WaLdO' in some dubious circles.)
 
@@ -75,9 +76,3 @@ This is a very basic form of a ZK-SNARK. For the skeptical verifier, this proces
 Like any metaphor, this one is not perfect. We would still be revealing a key piece of valuable information - the position of Wally. If we provide a solution to the encoded map-problem, the verifier could then use that solution to find Wally, and exploit him for labour. Obviously this is not ideal, and ways have been derived in which to prove we know the solution to a problem without even revealing the solution itself! 
 
 This gets very complicated, and might be detailed in another post. I'm bad at conclusions so yes, those are the basics of how ZK-snarks work from a VERY high level. They are powerful techniques which are only just beginning to be explored: in some sense, a zk-SNARK is to a cryptographic hash function what a 3D hologram is to a 2D picture. I encourage you to read more on them. SNARKS are an emerging field, and so please reach out to me at jstapleton17@apu.edu for any further questions (or, if you have corrections to what I said here).
-
-{
-    \time 2/4
-    \clef bass
-}
-
