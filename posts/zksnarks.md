@@ -20,7 +20,7 @@ The classic example of a zk-SNARK can be explained using the Where's Wally franc
 </p>
 
 <p align="center">
-    Can you find him? (Clue: he looks like what you would get if you combined santa, a prison inmate, and a pedophile. Very distinctive.)
+    *Can you find him? (Clue: he looks like what you would get if you combined santa, a prison inmate, and a pedophile. Very distinctive.)*
 </p>
 
 This original task of finding Wally is not particularly difficult for human beings. In fact, researchers have created an AI which can find Wally [immediately](https://www.popularmechanics.com/technology/robots/a22705240/this-ai-powered-robot-can-find-waldo-instantly/).
@@ -34,7 +34,7 @@ Metaphorically, this is how it is done. Set up a floor to ceiling wall between t
 </p>
 
 <p align="center">
-    The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.
+    *The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.*
 </p>
 
 This, at an extremely generalized, metaphorical level, is a zero-knowledge proof: or more specifically, a zk-SNARK. While I am still figuring out the trade-offs between the different species of the zk family, (for example, there is another type called ZK-STARKs (Zero-Knowledge Scalable Transparent ARguments of Knowledge) which claims to improve on the technology behind zk-SNARKs) the core idea remains incredibly powerful. 
@@ -73,7 +73,7 @@ Now, why does this work? Essentially, we are able to verify solutions to polynom
 </p>
 
 <p align="center">
-    Note that these polynomials only intersect at a two points out of all possible points. Guessing the intersection points without any information about the polynomials would be extremely difficult.
+    *Note that these polynomials only intersect at a two points out of all possible points. Guessing the intersection points without any information about the polynomials would be extremely difficult.*
 </p>
 
 Why is this property helpful? Well, it implies that if two polynomials, evaluated at a random point are equal, there is a very very high chance that they are in fact the same polynomial. This concept is more formally explained by the [Schwartz–Zippel lemma] (https://en.wikipedia.org/wiki/Schwartz–Zippel_lemma). 

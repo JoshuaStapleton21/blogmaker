@@ -66,7 +66,7 @@
 <img src="static/../../static/wheres_wally.jpg" />
 </p>
 <p align="center">
-Can you find him? (Clue: he looks like what you would get if you combined santa, a prison inmate, and a pedophile. Very distinctive.)
+<em>Can you find him? (Clue: he looks like what you would get if you combined santa, a prison inmate, and a pedophile. Very distinctive.)</em>
 </p>
 <p>This original task of finding Wally is not particularly difficult for human beings. In fact, researchers have created an AI which can find Wally <a href="https://www.popularmechanics.com/technology/robots/a22705240/this-ai-powered-robot-can-find-waldo-instantly/">immediately</a>.</p>
 <p>The question asked by zk-SNARKS, however, is profoundly more complex - "can we prove (to a verifier) that we know where Wally is without revealing his actual position?" Before reading further, have a think about how you might do this in practice (you won't).</p>
@@ -75,7 +75,7 @@ Can you find him? (Clue: he looks like what you would get if you combined santa,
 <img src="static/../../static/scary_wally.png" />
 </p>
 <p align="center">
-The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.
+<em>The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.</em>
 </p>
 <p>This, at an extremely generalized, metaphorical level, is a zero-knowledge proof: or more specifically, a zk-SNARK. While I am still figuring out the trade-offs between the different species of the zk family, (for example, there is another type called ZK-STARKs (Zero-Knowledge Scalable Transparent ARguments of Knowledge) which claims to improve on the technology behind zk-SNARKs) the core idea remains incredibly powerful.</p>
 <h3 id="real-world-examples">Real-World Examples</h3>
@@ -96,7 +96,7 @@ The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.
 <img src="static/../../static/polynomials.png" />
 </p>
 <p align="center">
-Note that these polynomials only intersect at a two points out of all possible points. Guessing the intersection points without any information about the polynomials would be extremely difficult.
+<em>Note that these polynomials only intersect at a two points out of all possible points. Guessing the intersection points without any information about the polynomials would be extremely difficult.</em>
 </p>
 <p>Why is this property helpful? Well, it implies that if two polynomials, evaluated at a random point are equal, there is a very very high chance that they are in fact the same polynomial. This concept is more formally explained by the [Schwartz–Zippel lemma] (https://en.wikipedia.org/wiki/Schwartz–Zippel_lemma).</p>
 <p>Understanding these properties, the procedure of the zk-SNARK is relatively simple. Instead of having the prover hand over their computation in polynomial form, and having the verifier compare this to their own, the parties perform the following steps:</p>
