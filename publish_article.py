@@ -1,7 +1,7 @@
 import os
 
 ########### THIS IS THE ONLY PARAMETER WHICH NEEDS TO BE CONFIGURED IN THE WHOLE FILE ##########
-article_name = "zksnarks"
+article_name = "hoi"
 ################################################################################################
 
 
@@ -47,14 +47,15 @@ os.system('./publish.py posts/' + str(article_name) + '.md')
 with open('templates/index.html') as f:
     html_lines = f.readlines()
 
+# remove the last ul tag
 html_lines.pop()
 
-html_lines.append('<li>\n')
-html_lines.append('  <span class="post-meta">'+ str(date) +'</span>\n')
-html_lines.append('  <h3>\n')
-html_lines.append('    <a class="post-link" href="'+ str(article_name)+'.html">'+ str(article_title)+'</a>\n')
-html_lines.append('  </h3>\n')
-html_lines.append('</li>\n')
+html_lines.append('  <li>\n')
+html_lines.append('    <span class="post-meta">'+ str(date) +'</span>\n')
+html_lines.append('    <h3>\n')
+html_lines.append('      <a class="post-link" href="'+ str(article_name)+'.html">'+ str(article_title)+'</a>\n')
+html_lines.append('    </h3>\n')
+html_lines.append('  </li>\n')
 
 # re-write the new app code
 html_out = open("templates/index.html", "w")
@@ -62,7 +63,7 @@ for line in html_lines:
      html_out.write(line)
 
 # re-add the last line
-html_out.write(' </ul> ')
+html_out.write('</ul>')
 
 
 
@@ -86,5 +87,5 @@ for line in app_lines:
 
 # re-add the last two lines
 app_out.write("\n")
-app_out.write("if __name__ == '__main__':\n")
+app_out.write("if __name__ == '__main__': # there is always one line between the last app route and these last two lines\n")
 app_out.write("    app.run(debug=True)")

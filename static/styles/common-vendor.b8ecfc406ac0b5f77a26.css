@@ -719,4 +719,19 @@
 .fa-meetup:before { content: "\f2e0"; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect( 0, 0, 0, 0 ); border: 0; }
 .sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; }
+.aParent div {
+    float: left;
+    clear: none; 
+}
+.topright { vertical-align: 30px; text-align: right; height: -10px}
+    
 
+.flex-parent {
+display: flex;
+}
+.flex-left-child {
+    flex: 1;
+    }
+.flex-right-child {
+flex: 1; text-align: right; vertical-align: center;
+}

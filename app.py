@@ -18,5 +18,9 @@ def meaning_of_life():
 def zksnarks():
     return render_template('templates/2021/07/07/zksnarks.html')
 
-if __name__ == '__main__':
+@app.route('/ai_horror.html')
+def ai_horror():
+    return render_template('templates/2021/07/11/ai_horror.html')
+
+if __name__ == '__main__': # there is always one line between the last app route and these last two lines
     app.run(debug=True)
