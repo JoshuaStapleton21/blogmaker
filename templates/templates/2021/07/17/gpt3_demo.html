@@ -1,0 +1,90 @@
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/feed.xml" title="GPT3 Demo">
+
+
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/common-vendor.b8ecfc406ac0b5f77a26.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/font-vendor.b86e2bf451b246b1a88e.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/fretboard.f32f2a8d5293869f0195.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty.0ae3265014f89d9850bf.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty-vendor.83ac49e057c3eac4fce3.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/misc.css') }}">
+
+<style>
+@font-face {
+    font-family: MJXc-TeX-math-Iw;
+    src: url("https://assets.hackmd.io/build/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff")
+}
+@font-face {
+    font-family: MJXZERO;
+    src: url("https://assets.hackmd.io/build/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff")
+}
+@font-face {
+    font-family: MJXTEX;
+    src: url("https://assets.hackmd.io/build/MathJax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff")
+}
+
+.math { font-family: MJXc-TeX-math-Iw }
+</style>
+
+<div id="doc" class="container-fluid markdown-body comment-enabled" data-hard-breaks="true">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="GPT3 Demo" />
+<meta name="twitter:image" content="http://vitalik.ca/images/icon.png" />
+
+
+<br>
+<h1 style="margin-bottom:7px"> GPT3 Demo </h1>
+<small style="float:left; color: #888"> 2021 Jul 17 </small>
+<small style="float:right; color: #888"><a href="/">See all posts</a></small>
+<br> <br> <br>
+<title> GPT3 Demo </title>
+
+<p>Below is a basic GPT-3 interface. Feel free to use it sparingly, as it runs through my personal account. Because of this, I've limited the response character length to 200 tokens.</p>
+
+<!-- <form action="/gpt3_request.py">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="submit" value="Submit">
+</form>  -->
+
+<!-- <form name="search" action="templates/templates/2021/07/17/cgi-bin/gpt3_request.py" method="get">
+    Search: <input type="text" name="searchbox">
+    <input type="submit" value="Submit">
+    </form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> -->
+<head><title>Test</title> 
+    <meta charset=utf-8> </head>
+    <body>
+        <form name="article_title" action="signup" method="post">
+            
+        </form> 
+    
+        <form action="/signup" method="POST">
+            <br><br>
+            <p style="font-weight: bold;">Article Title</p>
+            <textarea id="w3review" name="article_title" rows="1" cols="50">My GPT-3 Article
+              </textarea>     
+            <br><br>
+            <p style="font-weight: bold;">Article Body Prompt</p>
+            <textarea id="w3review" name="article_body_prompt" rows="4" cols="50">Once upon a time 
+              </textarea>
+              <br><br>
+            <button id="button" onclick="func()">Generate Article</button>
+        </form>
+        <script>
+            
+            function func() {
+                console.log("hi");
+            }
+        </script>
+    </body>
+</div> 
