@@ -64,7 +64,7 @@ def slow():
     print("Processing user input of ", ARTICLE_BODY_PROMPT)
     get_open_api_response(str(ARTICLE_BODY_PROMPT), str(ARTICLE_TITLE)) # get the response, and write it to md
     publish_gtp3_output() # publish the response from md as a new article
-    return ""
+    return "Yah Yeet"
 
 if __name__ == '__main__': # there is always one line between the last app route and these last two lines
     app.run(debug=True)
