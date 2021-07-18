@@ -6,6 +6,9 @@ from gpt3_publish import publish_gtp3_output
 
 app = Flask(__name__)
 
+ARTICLE_BODY_PROMPT = ""
+ARTICLE_TITLE = ""
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -30,15 +33,38 @@ def ai_horror():
 def gpt3_demo():
     return render_template('templates/2021/07/17/gpt3_demo.html')
 
-@app.route('/signup', methods = ['POST'])
-def signup():
-    article_body_prompt = request.form['article_body_prompt']
-    article_title = request.form['article_title']
-    print(article_title)
-    print("Processing user input of ", article_body_prompt)
-    get_open_api_response(str(article_body_prompt), str(article_title)) # get the response, and write it to md
-    publish_gtp3_output() # publish the response from md as a new article
+# @app.route('/signup', methods = ['POST'])
+# def signup():
+#     article_body_prompt = request.form['article_body_prompt']
+#     article_title = request.form['article_title']
+#     # print(article_title)
+#     # print("Processing user input of ", article_body_prompt)
+#     # get_open_api_response(str(article_body_prompt), str(article_title)) # get the response, and write it to md
+#     # publish_gtp3_output() # publish the response from md as a new article
+#     # redirect('templates/loader.html')
+#     # time.sleep(10)
+#     # return render_template('templates/2021/07/11/loader.html')
+#     return render_template('templates/2021/07/11/temp_gpt3.html')
+
+@app.route("/hello", methods = ['POST'])
+def hello():
+    global ARTICLE_BODY_PROMPT
+    ARTICLE_BODY_PROMPT = request.form['article_body_prompt']
+    global ARTICLE_TITLE
+    ARTICLE_TITLE = request.form['article_title']
+    return render_template('templates/2021/07/11/loader.html')
+
+@app.route("/done")
+def done():
     return render_template('templates/2021/07/11/temp_gpt3.html')
+
+@app.route("/slow")
+def slow():
+    print("User title: ", ARTICLE_TITLE)
+    print("Processing user input of ", ARTICLE_BODY_PROMPT)
+    get_open_api_response(str(ARTICLE_BODY_PROMPT), str(ARTICLE_TITLE)) # get the response, and write it to md
+    publish_gtp3_output() # publish the response from md as a new article
+    return ""
 
 if __name__ == '__main__': # there is always one line between the last app route and these last two lines
     app.run(debug=True)
