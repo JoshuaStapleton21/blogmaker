@@ -1,5 +1,4 @@
 [category]: <> (Philosophy)
 [date]: <> (2021/07/11)
-[title]: <> (My GPT-3 Article)
-Once upon a time 
-              , a local group of men of high standing in the community came together with a common goal: to protect and serve their community.
+[title]: <> (Mario)
+Super Mario, was a  box office smash in the United States. The film was the first chapter in the Super Mario Bros. film series and was followed by a sequel...is a Japanese plumber who serves as the protagonist of the video game franchise of the same name created by Nintendo. A very popular character, Mario has appeared in over 200 video games since his creation and as a result also appeared in Nintendo's very profitable multi-billion dollar Mario...is a fictional character from the Mario video game franchise. It is a race of turtle like humanoid creatures that wear red caps and predominantly dwell in the Mushroom Kingdom, a fictional realm...is a video game franchise developed and published by Nintendo. It is a long-running and critically acclaimed series, and is the best-selling video game franchise...- Theis a platform video game developed by Nintendo and released for the Nintendo Entertainment System...
