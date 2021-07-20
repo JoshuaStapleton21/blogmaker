@@ -230,13 +230,15 @@ def make_toc(toc_items, global_config, all_categories, category=None):
     )
 
 
-if __name__ == '__main__':
+def publish_an_article(args):
+# if __name__ == '__main__':
+
     # Get blog config
     global_config = extract_metadata(open('config.md'))
 
     # Special case: '--sync' option
-    if len(sys.argv) >= 2 and sys.argv[1] == '--sync':
-        flags = set(sys.argv[2:])
+    if len(args) >= 2 and args[1] == '--sync':
+        flags = set(args[2:])
         if flags.intersection({'posts', 'all'}):
             os.system('rsync -av site/. {}:{}'.format(global_config['server'], global_config['website_root']))
         elif flags.intersection({'images', 'all'}):
@@ -250,7 +252,7 @@ if __name__ == '__main__':
         sys.exit()
 
     # Normal case: process each provided file
-    for file_location in sys.argv[1:]:
+    for file_location in args[1:]:
         filename = os.path.split(file_location)[1]
         print("Processing file: {}".format(filename))
         

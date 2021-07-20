@@ -1,5 +1,5 @@
 [category]: <> (Philosophy)
 [date]: <> (2021/07/11)
-[title]: <> (My GPT-3 Article)
-Once upon a time 
-               there was a girl who had the worst luck in the whole world. Some days she'd wake up and things would go wrong before she even got out of bed. Some days she'd be in the middle of doing something and there'd be some kind of disaster and she'd have to start all over at the beginning. Some days she'd be right in the middle of doing something and suddenly she'd feel as though she couldn't catch her breath. Some days she'd be doing something pretty spectacular like winning a big game or getting an A on some hard homework and then she'd be reminded of something else bad that had happened, some other bad thing she'd done, and the good thing was instantly eclipsed and the day was ruined. Some days she'd be feeling so bad about herself she'd try to kill herself by hitting her head on the bathroom tile, but she'd always come to her senses before it was too late. She was afraid of dying and what would happen to her if she died, but she was more afraid of living.
+[title]: <> (Yobo)
+Beyonce is a strong woman. 
+               She is a feminist, and she is very vocal about it. She has been in the spotlight since she was a child, and therefore she has to be a role model for her daughter.
