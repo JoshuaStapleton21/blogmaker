@@ -27,7 +27,6 @@ def extract_metadata(fil, filename=None):
             break
     return metadata
 
-
 # read in metadata about the post
 global_config = extract_metadata(open('config.md'))
 file_location = "posts/"+str(article_name)+".md"
@@ -36,11 +35,8 @@ metadata = extract_metadata(open(file_location), filename)
 article_title = metadata['title']
 date = metadata['date']
 
-
 # first transform new post to html
 os.system('./publish.py posts/' + str(article_name) + '.md')
-
-
 
 
 # # second change the html page to include new post # #
@@ -64,8 +60,6 @@ for line in html_lines:
 
 # re-add the last line
 html_out.write('</ul>')
-
-
 
 
 # # third change the app file to include new post # #
