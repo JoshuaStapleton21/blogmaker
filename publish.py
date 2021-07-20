@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import os, sys, datetime
-import pandoc
-import subprocess
+from pypandoc.pandoc_download import download_pandoc
+import pypandoc
+# download_pandoc()
+import pandoc 
 
 PRE_HEADER = """
 
@@ -270,7 +272,10 @@ def publish_an_article(args):
         # subprocess.run('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
         # os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
         # doc = pandoc.read(text)
-        pandoc.write('tmp/temp_output.html', file_location, options)
+        # print(file_location)
+        # pypandoc.convert_file('tmp/temp_output.html', 'temp_gpt3.md', options)
+        output = pypandoc.convert_file('posts/temp_gpt3.md', to='html', outputfile='tmp/temp_output.html', )
+        
         total_file_contents = (
             PRE_HEADER +
             RSS_LINK.format(metadata['title']) +
