@@ -266,8 +266,8 @@ def publish_an_article(args):
         # Generate the html file
         options = metadata.get('pandoc', '')
         
-        subprocess.run('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
-        # os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
+        # subprocess.run('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
+        os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
         total_file_contents = (
             PRE_HEADER +
             RSS_LINK.format(metadata['title']) +
