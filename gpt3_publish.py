@@ -8,4 +8,4 @@ def publish_gtp3_output():
     # path = os.getcwd()
     # os.system(str(path) + '/publish.py posts/' + str('temp_gpt3') + '.md')
 
-publish_gtp3_output()
+# publish_gtp3_output()
