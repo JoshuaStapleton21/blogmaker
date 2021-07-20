@@ -75,7 +75,7 @@ with open('app.py') as f:
 app_lines.pop()
 app_lines.pop()
 
-# add ther new flask method to show the article
+# add their new flask method to show the article
 app_lines.append("@app.route('/"+ str(article_name) +".html')\n")
 app_lines.append('def '+ str(article_name) + '():\n')
 app_lines.append("    return render_template('templates/"+ str(date) +"/"+ str(article_name) + ".html')\n")

@@ -2,4 +2,5 @@
 import os
 
 def publish_gtp3_output():
-    os.system('./publish.py posts/' + str('temp_gpt3') + '.md')
+    path = os.getcwd()
+    os.system(str(path) + '/publish.py posts/' + str('temp_gpt3') + '.md')
