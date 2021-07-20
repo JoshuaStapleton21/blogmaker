@@ -2,7 +2,7 @@
 import os, sys, datetime
 from pypandoc.pandoc_download import download_pandoc
 import pypandoc
-# download_pandoc()
+download_pandoc()
 
 PRE_HEADER = """
 
