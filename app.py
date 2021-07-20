@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from flask import request
 from gpt3_request import get_open_api_response
-
 from gpt3_publish import publish_gtp3_output
 
 app = Flask(__name__)

@@ -1,4 +1,3 @@
-pandoc
 flask
 openai
 python-dotenv
