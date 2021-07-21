@@ -1,5 +1,5 @@
 [category]: <> (Philosophy)
 [date]: <> (2021/07/11)
-[title]: <> (Tubbo)
-Tubbo was a sweet little dog
-               and everyone loved him and he was always so friendly and never stopped smiling. He liked to play with his dog friends at Wedgwood Farm.
+[title]: <> (Superman)
+He was a strong man, 
+               from what she could tell, his arms as taut as those of a warrior.

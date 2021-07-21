@@ -2,7 +2,6 @@
 import os, sys, datetime
 from pypandoc.pandoc_download import download_pandoc
 import pypandoc
-# download_pandoc()
 
 PRE_HEADER = """
 
@@ -18,10 +17,6 @@ HEADER = """
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty.0ae3265014f89d9850bf.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pretty-vendor.83ac49e057c3eac4fce3.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/misc.css') }}">
-
-<script type="text/javascript" id="MathJax-script" async
-  src="/scripts/mathjax.js">
-</script>
 
 <style>
 @font-face {
@@ -273,6 +268,7 @@ def publish_an_article(args):
         # doc = pandoc.read(text)
         # print(file_location)
         # pypandoc.convert_file('tmp/temp_output.html', 'temp_gpt3.md', options)
+        download_pandoc()
         output = pypandoc.convert_file('posts/temp_gpt3.md', to='html', outputfile='tmp/temp_output.html', )
         
         total_file_contents = (
