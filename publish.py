@@ -271,7 +271,6 @@ def publish_an_article(args):
         # pypandoc.convert_file('tmp/temp_output.html', 'temp_gpt3.md', options)
         # download_pandoc()
         print("######## trying to set path ########")
-        os.environ.setdefault('PATH', 'pandoc-2.14.1-1-amd64.deb')
         output = pypandoc.convert_file('posts/temp_gpt3.md', to='html', outputfile='tmp/temp_output.html', )
         
         total_file_contents = (
