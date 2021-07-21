@@ -12,7 +12,6 @@ ARTICLE_TITLE = ""
 def home():
     return render_template('index.html')
 
-
 @app.route("/hello", methods = ['POST'])
 def hello():
     global ARTICLE_BODY_PROMPT
