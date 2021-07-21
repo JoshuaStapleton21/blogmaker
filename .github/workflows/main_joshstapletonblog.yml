@@ -29,7 +29,8 @@ jobs:
 
     - name: Install dependencies
       run: pip install -r requirements.txt
-        PATH=pandoc-2.14.1-1-amd64.deb
+        PATH=pandoc-2.14.1-1-amd64.deb:$PATH
+        export PATH
         # brew bundle ##### this line was added ##################################
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
