@@ -8,6 +8,12 @@ app = Flask(__name__)
 ARTICLE_BODY_PROMPT = ""
 ARTICLE_TITLE = ""
 
+### In order to get this working, PATH environment variable needs to be set to pandoc
+### To do this, you need to add PATH in the kudu shell for this container
+### In order to do that, you need to add an applicationHost.xdt file to home/site using the bash script.
+### In order to do this, you need to use echo commands to manually write to the file
+### In order to do that, you need to figure out how to escape quotation marks
+
 @app.route('/')
 def home():
     return render_template('index.html')
