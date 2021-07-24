@@ -1,9 +1,11 @@
 import os
+from publish import publish_an_article
 
 ########### THIS IS THE ONLY PARAMETER WHICH NEEDS TO BE CONFIGURED IN THE WHOLE FILE ##########
-article_name = "gpt3_demo"
+article_name = "feral_mozart"
 ################################################################################################
 
+# temp_gpt3 article name for gpt3 demo
 
 def extract_metadata(fil, filename=None):
     metadata = {}
@@ -35,9 +37,8 @@ metadata = extract_metadata(open(file_location), filename)
 article_title = metadata['title']
 date = metadata['date']
 
-# first transform new post to html
-os.system('./publish.py posts/' + str(article_name) + '.md')
-
+args_in = ['/Users/joshuastapleton/Desktop/joshua_stapleton_blog/blogmaker/publish.py', 'posts/'+ str(article_name) + '.md']
+publish_an_article(args_in)
 
 # # second change the html page to include new post # #
 with open('templates/index.html') as f:

@@ -13,7 +13,7 @@ face on the carton.
 Topic: Silence, Wind
 ```
 
-is mediocre at best. It barely makes sense at all. Regardless, the AI yielded a couple of very fascinating (and also very deranged) outputs. Here are a few of them, listed in order of increasing derangement - my favorite order ;)
+is mediocre at best. It barely makes sense at all. Regardless, the AI yielded a couple of very fascinating (and also very deranged) outputs. Here are a few of them, listed in order of increasing derangement - my favorite order ;).
 
 
 
@@ -24,7 +24,7 @@ The wind is angry tonight. The trees are swaying back and forth
 and the branches are rustling. I always blame the wind when the 
 trees start to dance.
 ```
-This is barely horror, however, it captures a feeling of ominous unease essential to the beginning of any masterful thriller.  Here, we glimpse the beautiful imagery of dancing trees, yet it is twisted: framed by the bite of words like *blame*. This is excellent writing (for an AI) - we might compare it to the flower-wreathed tableaus of *Midsommar*. *Chefs Kiss*
+This is barely horror, however, it captures a feeling of ominous unease essential to the beginning of any masterful thriller.  Here, we glimpse the beautiful imagery of dancing trees, yet it is twisted: marred by the bite of words like *blame*. This is excellent writing (for an AI) - we might compare it to the flower-wreathed tableaus of *Midsommar*. \*Chefs Kiss\*
 
 
 ```
@@ -33,7 +33,7 @@ me through the dark night. But it was the gentle breeze that drifted through
 my hair when he finally left that broke me.
 ```
 
-Also not strictly horror (although the manic revenge of a woman scorned is likely). Here we have a beautiful, multi-sentence metaphor, even if it is kinda goth. The wind rages, it drifts, it fulls many roles, takes many colors. One can all but feel the cold rains of the moor as one runs, draped in a white, thin shawl, hacking into a bloody handkerchief. Jane Eyre could never; is GPT-3 secretly one of the Bronte sisters??
+Also not really horror (although the manic revenge of a woman scorned is likely). Here we have a beautiful, multi-sentence metaphor, even if it is kinda goth. The wind rages, it drifts: it fulls many roles, takes many colors. One can all but feel the cold rains of the moor as one runs, draped in a white, thin shawl, hacking into a bloody handkerchief. Jane Eyre could never.
 
 ```
 It's been almost twenty years since she's last spoken to me, but 
@@ -41,14 +41,14 @@ I'm still waiting for her to say something. She's so beautiful,
 even when she's not speaking.
 ```
 
-Here, we begin to enter classic horror. This piece is more subtle than many of the other responses, as the terror is not in what is said, but what is implied. Why does she not speak? Is she mute? Is she breathing? Very very nice.
+Here is our first glimpse of classic horror. This piece is more subtle than many of the other responses, as the terror is not in what is said, but what is implied. Why does she not speak? Is she mute? Is she breathing? Very very nice.
 
 ```
 The silence in the car is worse than the screaming. 
 I can't stand it when she doesn't talk to me.
 ```
 
-A similar sentiment - we catch a glimpse into the mind of the writer - a good thing in horror. By exposing the mind of the narrator, this piece provides realism, understanding - a powerful enzyme of fear.
+A similar sentiment - we catch a glimpse into the mind of the writer - an excellent technique in horror. By exposing the thoughts of the narrator, this piece provides realism, understanding - a powerful enzyme for fear.
 
 ```
 I can't believe he's still alive! It's been years since he's left the attic. 
@@ -67,7 +67,7 @@ Simple, to the point. Who knew AI could learn to foreshadow?
 ```
 I'm not sure if I'm more afraid of: the silence or of what it means.
 ```
-I like this one a lot. Very open-ended. The tension is palpable, yet cannot be pinned down. It is infinitely more terrifying to not know the nature of that which is threatening you. 
+I like this one a lot. Very open-ended. The tension is palpable, yet cannot be pinned down. It is infinitely more terrifying to not know the nature of that which is threatening you, than to know it. 
 
 ```
 The wind whispered to me. He said he could make me fly if I wanted to.
@@ -110,7 +110,7 @@ I... have no words. It's not even 'elbowS' plural, but 'elbow'. PLEASE.
 They call it wind because it makes you turn inside-out.
 ```
 
-This is the content I am here for. D.e.r.a.n.g.e.d. beyond belief. "They call it wind": yes, they actually do 🤯. This horror is about as effective as saying "they call it walking, because you'll come back without any bOnEs in your bOdY." Comedians should honestly give up at this point.
+This is the content I am here for. D.E.R.A.N.G.E.D. beyond belief. "They call it wind": yes, they actually do 🤯. This horror is about as effective as saying "they call it walking, because you'll come back without any *bOnEs in your bOdY*." Comedians should honestly give up at this point.
 
-Thank you for reading - I hope you enjoyed this post - I certainly did XD. Please email me @jstapleton17@apu.edu if you would like to dispute my ordering choices. You're wrong, but I appreciate the effort :D.
+So that is the list! Thank you for reading - I hope you enjoyed this post - I certainly did XD. Please [email](mailto:@joshua.stapleton.ai@gmail.com) me if you would like to dispute my ordering choices. You're wrong, but I appreciate the effort :D.
 

@@ -1,8 +1,6 @@
-#!/usr/bin/python3
 import os, sys, datetime
-from pypandoc.pandoc_download import download_pandoc
 import pypandoc
-import os
+from pypandoc.pandoc_download import download_pandoc
 
 PRE_HEADER = """
 
@@ -271,8 +269,10 @@ def publish_an_article(args):
         # pypandoc.convert_file('tmp/temp_output.html', 'temp_gpt3.md', options)
         # download_pandoc()
         print("######## trying to set path ########")
-        # os.environ.setdefault('PATH', 'pandoc-2.14.1-1-amd64.deb')
-        output = pypandoc.convert_file('posts/temp_gpt3.md', to='html', outputfile='tmp/temp_output.html', )
+        
+        os.environ.setdefault('PATH', 'pandoc-2.14.1-1-amd64.deb')
+        
+        output = pypandoc.convert_file('posts/' + str(filename), to='html', outputfile='tmp/temp_output.html', )
         
         total_file_contents = (
             PRE_HEADER +

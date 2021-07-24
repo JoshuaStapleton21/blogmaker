@@ -54,5 +54,9 @@ def ai_horror():
 def gpt3_demo():
     return render_template('templates/2021/07/17/gpt3_demo.html')
 
+@app.route('/feral_mozart.html')
+def feral_mozart():
+    return render_template('templates/2021/07/24/feral_mozart.html')
+
 if __name__ == '__main__': # there is always one line between the last app route and these last two lines
     app.run(debug=True)
