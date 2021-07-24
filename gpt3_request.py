@@ -1,14 +1,12 @@
 import os
 import openai
 from dotenv import load_dotenv
-import json
 from test_gpt3 import getgpt
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def get_open_api_response(user_prompt, title):
-    # print(user_prompt)
     print(user_prompt.strip())
     response = getgpt(user_prompt.strip())
     
