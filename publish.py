@@ -1,5 +1,6 @@
 import os, sys, datetime
 import pypandoc
+from pypandoc.pandoc_download import download_pandoc
 
 PRE_HEADER = """
 
@@ -267,9 +268,10 @@ def publish_an_article(args):
         
         print("######## trying to download pandoc ########")
         # os.environ.setdefault('PATH', 'pandoc-2.14.1-1-amd64.deb')
-        pypandoc.pandoc_download()
+        download_pandoc()
         output = pypandoc.convert_file('posts/' + str(filename), to='html', outputfile='tmp/temp_output.html', )
         print("Pypandoc worked ")
+
         total_file_contents = (
             PRE_HEADER +
             RSS_LINK.format(metadata['title']) +
