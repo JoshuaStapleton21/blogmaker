@@ -1,6 +1,7 @@
 import os, sys, datetime
 import pypandoc
 from pypandoc.pandoc_download import download_pandoc
+import pandoc 
 
 PRE_HEADER = """
 
@@ -259,17 +260,8 @@ def publish_an_article(args):
         # Generate the html file
         options = metadata.get('pandoc', '')
         
-        # print('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
-        # subprocess.run('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
-        # os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
-        # doc = pandoc.read(text)
-        # print(file_location)
-        # pypandoc.convert_file('tmp/temp_output.html', 'temp_gpt3.md', options)
-        
         print("######## trying to download pandoc ########")
-        # os.environ.setdefault('PATH', 'pandoc-2.14.1-1-amd64.deb')
-        download_pandoc()
-        output = pypandoc.convert_file('posts/' + str(filename), to='html', outputfile='tmp/temp_output.html', )
+        os.system('pandoc -o tmp/temp_output.html {} {}'.format(file_location, options))
         print("Pypandoc worked ")
 
         total_file_contents = (
