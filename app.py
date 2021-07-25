@@ -1,18 +1,11 @@
 from flask import Flask, render_template
 from flask import request
-from gpt3_request import get_open_api_response
-from gpt3_publish import publish_gtp3_output
+from non_pandoc import rewrite_temp_gpt3_without_pandoc
 
 app = Flask(__name__)
 
 ARTICLE_BODY_PROMPT = ""
 ARTICLE_TITLE = ""
-
-### In order to get this working, PATH environment variable needs to be set to pandoc
-### To do this, you need to add PATH in the kudu shell for this container
-### In order to do that, you need to add an applicationHost.xdt file to home/site using the bash script.
-### In order to do this, you need to use echo commands to manually write to the file
-### In order to do that, you need to figure out how to escape quotation marks
 
 @app.route('/')
 def home():
@@ -34,8 +27,7 @@ def done():
 def slow():
     print("User title: ", ARTICLE_TITLE)
     print("Processing user input of ", ARTICLE_BODY_PROMPT)
-    get_open_api_response(str(ARTICLE_BODY_PROMPT), str(ARTICLE_TITLE)) # get the response, and write it to md
-    publish_gtp3_output() # publish the response from md as a new article
+    rewrite_temp_gpt3_without_pandoc(str(ARTICLE_BODY_PROMPT), str(ARTICLE_TITLE))
     return "Yah Yeet"
 
 @app.route('/meaning_of_life.html')
