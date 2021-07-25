@@ -40,7 +40,7 @@ def rewrite_temp_gpt3_without_pandoc(input_user_prompt, input_title):
     html_lines.append('<small style="float:left; color: #888"> 2021 Jul 11 </small>\n')
     html_lines.append('<small style="float:right; color: #888"><a href="/">See all posts</a></small>\n')
     html_lines.append('<br> <br> <br>\n')
-    html_lines.append('<p>'+str(input_user_prompt.strip()) + " " + str(article_body.strip())+'</p>\n')
+    html_lines.append('<p>'+str(input_user_prompt.strip()) + " " + str(article_body.strip())+'</p>\n') # concatenate prompt and response with a single space in between
     html_lines.append('</div>')
 
     # re-write the new app code

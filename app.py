@@ -17,7 +17,7 @@ def hello():
     ARTICLE_BODY_PROMPT = request.form['article_body_prompt']
     global ARTICLE_TITLE
     ARTICLE_TITLE = request.form['article_title']
-    return render_template('templates/2021/07/11/loader.html')
+    return render_template('templates/loader.html')
 
 @app.route("/done")
 def done():
