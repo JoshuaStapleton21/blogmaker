@@ -11,10 +11,6 @@ ARTICLE_TITLE = ""
 def home():
     return render_template('index.html')
 
-@app.route('/test_audio')
-def test_audio():
-    return render_template('test_audio.html')
-
 @app.route("/hello", methods = ['POST'])
 def hello():
     global ARTICLE_BODY_PROMPT
