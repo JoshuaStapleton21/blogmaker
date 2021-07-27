@@ -3,7 +3,6 @@
 [title]: <> (Symphonies and Scatology: Mozart At His Most Feral)
 
 Wolfgang. Amadeus. Mozart. 
-summer TAAAM
 
 What a name. What a guy! Perhaps the greatest composer of all time, this immature little wretch is responsible for a veritable library of composition which (along with Johann Sebastian) forms nothing less than the canonical foundation of Western Music.
 

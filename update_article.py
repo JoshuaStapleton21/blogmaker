@@ -8,5 +8,3 @@ article_name = "feral_mozart"
 
 args_in = ['/Users/joshuastapleton/Desktop/joshua_stapleton_blog/blogmaker/publish.py', 'posts/'+ str(article_name) + '.md']
 publish_an_article(args_in)
-
-# os.system('./publish.py posts/' + str(article_name) + '.md')
