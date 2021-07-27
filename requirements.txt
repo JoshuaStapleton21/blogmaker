@@ -2,3 +2,5 @@ pypandoc
 flask
 openai
 python-dotenv
+flask-sqlalchemy
+flask-login

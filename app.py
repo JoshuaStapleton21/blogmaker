@@ -1,15 +1,45 @@
-from flask import Flask, render_template
-from flask import request
+from flask import Flask, render_template, request
 from non_pandoc import rewrite_temp_gpt3_without_pandoc
+from auth import auth as auth_blueprint
+from flask_login import LoginManager, login_required, current_user 
+from flask_sqlalchemy import SQLAlchemy
+from models import User
 
+db = SQLAlchemy()
 app = Flask(__name__)
+
+app.register_blueprint(auth_blueprint)
+
+app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+
+db.init_app(app)
+
+login_manager = LoginManager()
+login_manager.login_view = 'auth.login'
+login_manager.init_app(app)
+
+@login_manager.user_loader
+def load_user(user_id):
+    # since the user_id is just the primary key of our user table, use it in the query for the user
+    return User.query.get(int(user_id))
 
 ARTICLE_BODY_PROMPT = ""
 ARTICLE_TITLE = ""
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    # return render_template('index.html')
+    return render_template('breve_home.html')
+
+@app.route('/about_us')
+def about_us():
+    return render_template('about_us.html')
+
+@app.route('/profile')
+@login_required
+def profile():
+    return render_template('profile.html', name=current_user.name)
 
 @app.route("/hello", methods = ['POST'])
 def hello():
