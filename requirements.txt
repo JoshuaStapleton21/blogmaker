@@ -4,3 +4,5 @@ openai
 python-dotenv
 flask-sqlalchemy
 flask-login
+rfc3339 # for the timestamps on payments
+python-dateutil
