@@ -29,8 +29,8 @@ ARTICLE_TITLE = ""
 
 @app.route('/')
 def home():
-    # return render_template('index.html')
-    return render_template('breve_home.html')
+    return render_template('index.html')
+    # return render_template('breve_home.html')
 
 @app.route('/about_us')
 def about_us():
