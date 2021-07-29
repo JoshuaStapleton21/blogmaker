@@ -63,7 +63,7 @@
 <h3 id="example">Example</h3>
 <p>The classic example of a zk-SNARK can be explained using the Where's Wally franchise. (‘Where's WaLdO' in some dubious circles.)</p>
 <p align="center">
-<img src="static/../../static/wheres_wally.jpg" />
+<img src="static/../../static/images/wheres_wally.jpg" />
 </p>
 <p align="center">
 <em>Can you find him? (Clue: he looks like what you would get if you combined santa, a prison inmate, and a pedophile. Very distinctive.)</em>
@@ -72,7 +72,7 @@
 <p>The question asked by zk-SNARKS, however, is profoundly more complex - "can we prove (to a verifier) that we know where Wally is without revealing his actual position?" Before reading further, have a think about how you might do this in practice (you won't).</p>
 <p>Metaphorically, this is how it is done. Set up a floor to ceiling wall between the prover (us) and the person to which we are proving our positional knowledge of Mr. Wally. Cut a tiny rectangle in the wall, just large enough to show the elusive character's smug (yet uniquely distinguishable) facial features. Next, add a sheet of one way glass so that the verifier can see whatever the prover positions on one side of the cutout, but the prover cannot see the verifier in any way. Finally, position the map such that Wally's face peeks through the hole, but nothing else about his surroundings is revealed. It is important to note that in this scenario, the viewer (the person we are proving our knowledge to) has absolutely no frame of reference which could be used to figure out where Wally is from our demonstration. In addition, there is no way for the prover and verifier to communicate with each other.</p>
 <p align="center">
-<img src="static/../../static/scary_wally.png" />
+<img src="static/../../static/images/scary_wally.png" />
 </p>
 <p align="center">
 <em>The simple (yet terrifying) POW (Proof Of Wally) as seen by the verifier.</em>
@@ -93,7 +93,7 @@
 <p>Once the verifier is able to see the inputs and outputs to our polynomial, they should be able to compare that to their own computation, or encoding of the polynomial. If they match, the verifier can be confident that the prover has the same polynomial, hence, has completed the same computation.</p>
 <p>Now, why does this work? Essentially, we are able to verify solutions to polynomial equations very quickly because polynomial functions are, in simple language, very uniquely squigily. That is, given two abitrary polynomials, even of the same degree, the chance of them intersecting at a randomly chosen point is incredibly low.</p>
 <p align="center">
-<img src="static/../../static/polynomials.png" />
+<img src="static/../../static/images/polynomials.png" />
 </p>
 <p align="center">
 <em>Note that these polynomials only intersect at a two points out of all possible points. Guessing the intersection points without any information about the polynomials would be extremely difficult.</em>
